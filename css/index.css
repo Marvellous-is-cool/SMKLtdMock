@@ -1,0 +1,48 @@
+.container-fluid {
+  margin: auto -1em !important;
+}
+
+.top_nav {
+  background-color: #0f141f;
+  font-family: "Inter";
+}
+
+.site_name {
+  font-weight: 400;
+  color: white;
+}
+
+.global {
+  background: radial-gradient(
+    75.47% 75.47% at 50% 0%,
+    #598bfc 0%,
+    #1a55db 100%
+  );
+  border-radius: 12px;
+  min-height: 8rem;
+  min-width: 35rem;
+  color: white;
+}
+
+.gl-name {
+  color: white;
+  font-weight: 400;
+}
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("css/fonts/Inter/inter-v12-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("css/fonts/Inter/inter-v12-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("css/fonts/Inter/inter-v12-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("css/fonts/Inter/inter-v12-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("css/fonts/Inter/inter-v12-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("css/fonts/Inter/inter-v12-latin-regular.svg#Inter") format("svg"); /* Legacy iOS */
+}
