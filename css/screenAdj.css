@@ -1,11 +1,17 @@
 /* (320x480) iPhone (Original, 3G, 3GS) */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* insert styles here */
+  .top_nav {
+    transform: scale(0.7);
+  }
 }
 
 /* (320x480) Smartphone, Portrait */
 @media only screen and (device-width: 320px) and (orientation: portrait) {
   /* insert styles here */
+  .top_nav {
+    transform: scale(0.7);
+  }
 }
 
 /* (320x480) Smartphone, Landscape */
@@ -16,6 +22,9 @@
 /* (480x800) Android */
 @media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
   /* insert styles here */
+  .top_nav {
+    transform: scale(0.7);
+  }
 }
 
 /* (640x960) iPhone 4 & 4S */
@@ -46,6 +55,9 @@
 /* (1024x768) iPad 1 & 2, Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* insert styles here */
+  .top_nav {
+    transform: scale(0.7);
+  }
 }
 
 /* (2048x1536) iPad 3 */
