@@ -5,11 +5,11 @@
 .top_nav {
   background-color: #0f141f;
   font-family: "Inter";
+  color: white;
 }
 
 .site_name {
   font-weight: 400;
-  color: white;
 }
 
 .global {
@@ -21,11 +21,9 @@
   border-radius: 12px;
   /* min-height: 8rem;
   min-width: 35rem; */
-  color: white;
 }
 
 .gl-name {
-  color: white;
   font-weight: 400;
 }
 /* inter-regular - latin */
