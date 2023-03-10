@@ -26,6 +26,10 @@
 .gl-name {
   font-weight: 400;
 }
+
+.indShip {
+  border-radius: 12px;
+}
 /* inter-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
