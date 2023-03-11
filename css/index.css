@@ -1,11 +1,8 @@
-.container-fluid {
-  margin: auto -1em !important;
-}
-
 .top_nav {
   background-color: #0f141f;
   font-family: "Inter";
   color: white;
+  font-weight: lighter;
 }
 
 .site_name {
@@ -29,6 +26,14 @@
 
 .indShip {
   border-radius: 12px;
+  height: 50px;
+  width: 220px;
+  min-height: 50px;
+  min-width: 220px;
+}
+
+.ship_manag_name {
+  font-size: 14px;
 }
 /* inter-regular - latin */
 @font-face {
