@@ -2,10 +2,6 @@ let indShipInd = document.querySelector(".ind-shipInd");
 let indShipSec = document.querySelector(".individual_ships");
 let ISTemp = document.querySelector(".example");
 
-// let Hresolution,
-//   Wresolution = height,
-//   width;
-
 const cloneIndShips = (access_name) => {
   const cloneTemp = ISTemp.cloneNode(true);
   indShipSec.appendChild(cloneTemp);
@@ -27,3 +23,32 @@ const names = ["Niaz Hossain", "Mortaza", "F.M. Zukov"];
 for (let i = 0; i <= names.length - 1; i++) {
   cloneIndShips(names[i]);
 }
+
+// arrows configs
+const arr_config = [
+  document.querySelector(".arrow_configActive"),
+  document.querySelector(".arrow_config"),
+];
+
+const toggleChevron = () => {
+  arr_config[1].addEventListener("click", () => {
+    if (arr_config[1].src == "img/Vector 175.png") {
+      arr_config[1].src = "img/up_arrow.png";
+    } else {
+      arr_config[1].src = "img/Vector 175.png";
+    }
+  });
+
+  arr_config[0].addEventListener("click", () => {
+    const Elemchild = document.querySelector(".child");
+    if (arr_config[0].src == "img/Vector 175.png") {
+      arr_config[0].src = "img/up_arrow.png";
+      Elemchild.classList.remove("d-none");
+    } else {
+      arr_config[0].src = "img/Vector 175.png";
+      Elemchild.classList.add("d-none");
+    }
+  });
+};
+
+toggleChevron();

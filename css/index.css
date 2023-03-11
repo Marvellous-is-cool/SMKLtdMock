@@ -3,6 +3,10 @@
   font-family: "Inter";
   color: white;
   font-weight: lighter;
+  min-width: 248px !important;
+  /* min-height: 885px; */
+  max-width: 248px !important;
+  /* max-height: 885px; */
 }
 
 .site_name {
@@ -16,8 +20,10 @@
     #1a55db 100%
   );
   border-radius: 12px;
-  /* min-height: 8rem;
-  min-width: 35rem; */
+  min-width: 216px;
+  min-height: 56px;
+  max-width: 216px;
+  max-height: 56px;
 }
 
 .gl-name {
@@ -26,15 +32,60 @@
 
 .indShip {
   border-radius: 12px;
-  height: 50px;
-  width: 220px;
-  min-height: 50px;
-  min-width: 220px;
+  max-height: 56px !important;
+  max-width: 216px !important;
+  min-height: 56px !important;
+  min-width: 216px !important;
+  background-color: #2e3a54;
 }
+
+.indShipNode,
+.indShipNode2,
+.indShipNode3 {
+  border-radius: 12px;
+  max-height: 50px !important;
+  max-width: 180px !important;
+  min-height: 50px !important;
+  min-width: 180px !important;
+  width: 75px;
+  margin: -1.3em 2.1em;
+  background-color: #2e3a54;
+  font-weight: lighter;
+}
+
+.indShipNode2 {
+  margin: -4.3em 2.1em;
+}
+
+.indShipNode3 {
+  margin: -0.3em 2.1em;
+}
+
+/* .side_lin {
+  transform: rotate(90deg);
+} */
 
 .ship_manag_name {
   font-size: 14px;
 }
+
+.situation {
+  color: #6d7da0;
+  font-size: 0.7em;
+}
+
+.side_bar2 {
+  margin: -1em -1.6em !important;
+}
+
+.side_bar3 {
+  margin: -1em 1.5em !important;
+}
+
+.side_bar4 {
+  margin: auto 1.5em !important;
+}
+
 /* inter-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
