@@ -63,6 +63,18 @@
 /* (2048x1536) iPad 3 */
 @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) {
   /* insert styles here */
+  /* .horizontal-nav {
+    min-width: 192px;
+    max-width: 1192px;
+    min-height: 28px;
+    max-height: 45px;
+    background: #0f141f;
+    border-bottom: 1px solid #e6e6e6;
+    font-family: "Inter";
+    color: white;
+    font-weight: lighter;
+    text-overflow: ellipsis;
+  } */
 }
 
 /* (1280x720) Galaxy Note 2, WXGA */

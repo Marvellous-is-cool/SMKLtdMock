@@ -1,3 +1,59 @@
+body {
+  background: #f4f8ff !important;
+}
+
+.horizontal-nav {
+  min-width: 192px;
+  max-width: 1192px;
+  min-height: 58px;
+  max-height: 78px;
+  background: #0f141f;
+  border-bottom: 1px solid #e6e6e6;
+  font-family: "Inter";
+  color: white;
+  font-weight: lighter;
+  text-overflow: ellipsis;
+}
+
+.dash_div {
+  background: #2e3a54 !important;
+  border-radius: 12px !important;
+  font-size: 8px !important;
+  font-weight: normal !important;
+}
+
+.othr_divs_2,
+.othr_divs {
+  color: #97a4c1 !important;
+  order: 1 !important;
+  font-size: 8px !important;
+  font-weight: normal !important;
+}
+
+.othr_divs_2 {
+  color: rgb(132, 143, 165) !important;
+  border: 1px solid rgb(132, 143, 165) !important;
+  border-radius: 10px !important;
+  font-size: 6px !important;
+}
+
+.othr_divs_2:hover {
+  border-color: radial-gradient(
+    75.47% 75.47% at 50% 0%,
+    #598bfc 0%,
+    #1a55db 100%
+  ) !important;
+  color: white !important;
+}
+
+.othr_divs:hover {
+  background: #2e3a54 !important;
+  border-radius: 12px !important;
+  font-size: 8px !important;
+  font-weight: normal !important;
+  color: white !important;
+}
+
 .top_nav {
   background-color: #0f141f;
   font-family: "Inter";

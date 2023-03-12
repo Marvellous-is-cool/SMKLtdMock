@@ -1,28 +1,62 @@
-let indShipInd = document.querySelector(".ind-shipInd");
-let indShipSec = document.querySelector(".individual_ships");
-let ISTemp = document.querySelector(".example");
-
-const cloneIndShips = (access_name) => {
-  const cloneTemp = ISTemp.cloneNode(true);
-  indShipSec.appendChild(cloneTemp);
-  cloneTemp.children[1].innerHTML = access_name;
-  console.log(cloneTemp.children[0].children[1]);
+const clones = (cloneFrom, cloneTo, hasNoChildren, access_name) => {
+  const cloneTemp = cloneFrom.cloneNode(true);
+  cloneTo.appendChild(cloneTemp);
+  if (
+    hasNoChildren === false ||
+    hasNoChildren === undefined ||
+    hasNoChildren === null ||
+    hasNoChildren === " " ||
+    hasNoChildren === ""
+  ) {
+    cloneTemp.children[1].innerHTML = access_name;
+  } else if (hasNoChildren === true) {
+    cloneTemp.innerHTML = access_name;
+  }
 };
 
-const SmallScreenSizes = () => {
-  indShipInd.classList.remove("d-none");
-  indShipSec.classList.add("d-none");
+// top hr nav clones
+const top_hr = () => {
+  let hr_nav = document.querySelector(".horizontal-nav");
+  let others = document.querySelector(".othr_divs");
+
+  const hr_navs_names = [
+    "Breakdown",
+    "Daily Reports",
+    "Cargo Operation",
+    "Bunker",
+    "Time Loss",
+    "Port Turn Out",
+    "Ballast Tank",
+    "Demarrage & Despatch",
+    "Voyage Summary",
+  ];
+
+  for (let i = 0; i <= hr_navs_names.length - 1; i++) {
+    clones(others, hr_nav, true, hr_navs_names[i]);
+  }
 };
 
-if (screen.width <= 480) {
-  SmallScreenSizes;
-}
+// const SmallScreenSizes = () => {
+//   indShipInd.classList.remove("d-none");
+//   indShipSec.classList.add("d-none");
+// };
 
-const names = ["Niaz Hossain", "Mortaza", "F.M. Zukov"];
+// if (screen.width <= 480) {
+//   SmallScreenSizes;
+// }
 
-for (let i = 0; i <= names.length - 1; i++) {
-  cloneIndShips(names[i]);
-}
+const inDcl = () => {
+  // individual ship names clones
+  let indShipInd = document.querySelector(".ind-shipInd");
+  let indShipSec = document.querySelector(".individual_ships");
+  let ISTemp = document.querySelector(".example");
+
+  const names = ["Niaz Hossain", "Mortaza", "F.M. Zukov"];
+
+  for (let i = 0; i <= names.length - 1; i++) {
+    clones(ISTemp, indShipSec, names[i]);
+  }
+};
 
 // arrows configs
 const arr_config = [
@@ -51,4 +85,6 @@ const toggleChevron = () => {
   });
 };
 
+top_hr();
+inDcl();
 toggleChevron();
