@@ -6,8 +6,8 @@ let elem = [
 let screen_width = screen.width;
 let screen_height = screen.height;
 
-elem[0].style.width = screen_width + "px";
-elem[1].style.height = screen_height + "px";
+elem[0].style.width = screen_width + "px !important";
+elem[1].style.height = screen_height + "px !important";
 
 // // ipad 3
 // const forIpad3 = () => {

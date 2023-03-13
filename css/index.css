@@ -1,6 +1,7 @@
 body {
   background: #f4f8ff !important;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .horizontal-nav {
@@ -56,12 +57,32 @@ body {
 }
 
 /* dashboard */
-.ship-cards {
+.card {
   border-radius: 12px;
-  background: url("../img/Mask.png") !important;
+  background-color: white;
+  background-image: url("../img/Mask.png") !important;
   background-position: right bottom !important;
   background-size: 10px 10px !important;
   background-repeat: no-repeat !important;
+}
+
+.card:hover {
+  background: #2668ff33 !important;
+  color: white !important;
+}
+
+.ab_alert {
+  min-width: auto !important;
+  min-height: auto !important;
+  max-width: 360px !important;
+  max-height: 260px !important;
+}
+
+.break_down {
+  min-width: auto !important;
+  min-height: auto !important;
+  max-width: 743px !important;
+  max-height: 261px !important;
 }
 
 .card-ship {
@@ -79,7 +100,7 @@ body {
   min-width: 248px !important;
   /* min-height: 885px; */
   max-width: 248px !important;
-  /* max-height: 885px; */
+  height: 100%;
 }
 
 .site_name {
@@ -106,9 +127,9 @@ body {
 .indShip {
   border-radius: 12px;
   max-height: 56px !important;
-  max-width: 216px !important;
+  max-width: 210px !important;
   min-height: 56px !important;
-  min-width: 216px !important;
+  min-width: 210px !important;
   background-color: #2e3a54;
 }
 

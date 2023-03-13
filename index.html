@@ -16,7 +16,7 @@
     <div class="container-fluid">
       <section class="container-for-all" style="background: #f4f8ff">
         <div class="row">
-          <nav class="col nav navbar top_nav flex-column align-items-start p-4">
+          <nav class="col nav navbar top_nav align-items-start p-4 vh-100">
             <h5 class="h5 site_name mt-3 ml-2 pb-3">SMK LTD.</h5>
 
             <!-- global -->
@@ -119,11 +119,11 @@
               </div>
             </section>
           </nav>
-          <div class="homeInit position-absolute" style="margin: 5.6em 16em">
-            <div
-              class="dashboard"
-              style="overflow-x: hidden; overflow-y: scroll"
-            >
+          <div
+            class="homeInit position-absolute"
+            style="margin: 5.6em 16em; overflow-x: hidden; overflow-y: scroll"
+          >
+            <div class="dashboard">
               <div class="mt-2 row">
                 <h4 class="col-sm-6 h4 glshtxt">Global Ship Report</h4>
                 <div class="col-sm-6 img_div">
@@ -291,11 +291,11 @@
                         >
                       </div>
                     </div>
-                    <div class="card-body p-1 mt-2">
+                    <div class="card-body p-1 mt-1">
                       <div class="row">
                         <div
                           class="col-sm-6 card-title"
-                          style="font-weight: bold"
+                          style="font-weight: bold; font-size: 13px"
                         >
                           Total Voyage Excess Consumption
                         </div>
@@ -346,11 +346,11 @@
                       </div>
                       <h3 class="h3 col-3 card-text card-number">7</h3>
                     </div>
-                    <div class="card-body p-1 mt-2">
+                    <div class="card-body p-1 mt-4">
                       <div class="row">
                         <div
                           class="col-sm-6 card-title"
-                          style="font-weight: bold"
+                          style="font-weight: bold; font-size: 13px"
                         >
                           Crane Breakdown Loss
                         </div>
@@ -365,6 +365,32 @@
                   </div>
                 </div>
                 <!-- #END -->
+              </div>
+
+              <div class="mt-5 row cargoGear">
+                <div class="col-sm-3"><hr /></div>
+                <h3 class="col-sm-3 h4">Cargo Gear</h3>
+                <div class="col-sm-3"><hr /></div>
+              </div>
+
+              <div
+                class="row mt-5 down_imgs justify-content-evenly"
+                style="overflow: wrap"
+              >
+                <div class="col-sm-6 p-2">
+                  <img
+                    src="img/Abnormality alerts.png"
+                    alt=""
+                    class="ab_alert"
+                  />
+                </div>
+                <div class="col-sm-6 p-2">
+                  <img
+                    src="img/Break down history.png"
+                    alt=""
+                    class="break_down"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -384,5 +410,5 @@
   <script src="js/index.js"></script>
   <script src="js/jquery-3.6.3.min.js"></script>
   <script src="bs/js/bootstrap.min.js"></script>
-  <!-- <script src="js/screenres.js"></script> -->
+  <script src="js/screenres.js"></script>
 </html>

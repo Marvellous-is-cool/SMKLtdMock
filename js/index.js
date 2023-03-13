@@ -11,8 +11,6 @@ const clones = (cloneFrom, cloneTo, hasNoChildren, access_name) => {
     cloneTemp.children[1].innerHTML = access_name;
   } else if (hasNoChildren === true) {
     cloneTemp.innerHTML = access_name;
-  } else if (hasNoChildren === "c") {
-    // You're on your own pops
   }
 };
 
@@ -95,7 +93,7 @@ const inDcl = () => {
   const names = ["Niaz Hossain", "Mortaza", "F.M. Zukov"];
 
   for (let i = 0; i <= names.length - 1; i++) {
-    clones(ISTemp, indShipSec, names[i]);
+    clones(ISTemp, indShipSec, "", names[i]);
   }
 };
 
