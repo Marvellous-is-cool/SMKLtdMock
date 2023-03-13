@@ -1,13 +1,55 @@
 let elem = [
   document.querySelector(".horizontal-nav"),
   document.querySelector(".top_nav"),
+  document.querySelector("body"),
+  document.querySelector(".first_row"),
+  document.querySelector(".dashboard"),
+  document.querySelector(".homeInit"),
 ];
 
-let screen_width = screen.width;
-let screen_height = screen.height;
+const MediaExec = (pixel, pixel2) => {
+  // small devices
+  const smallDev = (wdt) => {
+    const site_nameDIV = document.createElement("div");
+    site_nameDIV.classList.add("col-sm-3");
+    site_nameDIV.classList.add("s_nDIV");
+    site_nameDIV.classList.add("p-4");
+    site_nameDIV.classList.add("position-fixed");
+    site_nameDIV.classList.add("align-items-start");
 
-elem[0].style.width = screen_width + "px !important";
-elem[1].style.height = screen_height + "px !important";
+    const site_nameH = document.createElement("h5");
+    site_nameH.innerHTML = "SMK LTD.";
+    site_nameH.classList.add("h5");
+
+    //  <div class="col img_div">
+    // <img src="img/Vector.png" alt="" class="" />
+    // </div>
+
+    const site_left_nav_img = document.createElement("img");
+    site_left_nav_img.classList.add("mr-3");
+    site_left_nav_img.src = "..img\\Vector.png";
+
+    if (wdt.matches) {
+      // If media query matches
+      site_nameDIV.appendChild(site_nameH);
+      elem[3].insertBefore(site_nameDIV, elem[5]);
+
+      elem[5].classList.remove("position-absolute");
+      elem[5].classList.add("col-sm-3");
+      elem[5].classList.add("p-5");
+    } else {
+      site_nameDIV.remove();
+    }
+  };
+
+  let width = window.matchMedia(
+    `(min-width: ${pixel}px) and (max-width: ${pixel2}px)`
+  );
+  smallDev(width);
+  width.addListener(smallDev);
+};
+
+MediaExec(320, 480);
 
 // // ipad 3
 // const forIpad3 = () => {

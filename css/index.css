@@ -1,7 +1,6 @@
 body {
   background: #f4f8ff !important;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
 .horizontal-nav {
@@ -67,22 +66,24 @@ body {
 }
 
 .card:hover {
-  background: #2668ff33 !important;
+  background: rgba(38, 104, 255, 0.2) !important;
   color: white !important;
+  border: 1px solid rgba(38, 104, 255, 0.2) !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .ab_alert {
   min-width: auto !important;
   min-height: auto !important;
-  max-width: 360px !important;
+  max-width: 320px !important;
   max-height: 260px !important;
 }
 
 .break_down {
   min-width: auto !important;
   min-height: auto !important;
-  max-width: 743px !important;
-  max-height: 261px !important;
+  max-width: 723px !important;
+  max-height: 260px !important;
 }
 
 .card-ship {

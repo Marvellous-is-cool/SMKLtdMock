@@ -15,7 +15,7 @@
   <body>
     <div class="container-fluid">
       <section class="container-for-all" style="background: #f4f8ff">
-        <div class="row">
+        <div class="row first_row">
           <nav class="col nav navbar top_nav align-items-start p-4 vh-100">
             <h5 class="h5 site_name mt-3 ml-2 pb-3">SMK LTD.</h5>
 
@@ -119,14 +119,23 @@
               </div>
             </section>
           </nav>
+
+          <nav
+            class="col horizontal-nav nav navbar flex-reverse-column align-items-center justify-content-evenly"
+          >
+            <!-- dashboard -->
+            <div class="btn text-white dash_div">Dashboard</div>
+
+            <div class="btn othr_divs">Cargo Gear</div>
+          </nav>
           <div
             class="homeInit position-absolute"
             style="margin: 5.6em 16em; overflow-x: hidden; overflow-y: scroll"
           >
-            <div class="dashboard">
+            <div class="dashboard" style="overflow: scroll">
               <div class="mt-2 row">
-                <h4 class="col-sm-6 h4 glshtxt">Global Ship Report</h4>
-                <div class="col-sm-6 img_div">
+                <h4 class="col h4 glshtxt">Global Ship Report</h4>
+                <div class="col img_div">
                   <img src="img/Vector.png" alt="" class="" />
                 </div>
               </div>
@@ -368,23 +377,23 @@
               </div>
 
               <div class="mt-5 row cargoGear">
-                <div class="col-sm-3"><hr /></div>
-                <h3 class="col-sm-3 h4">Cargo Gear</h3>
-                <div class="col-sm-3"><hr /></div>
+                <div class="col"><hr /></div>
+                <h3 class="col h4">Cargo Gear</h3>
+                <div class="col"><hr /></div>
               </div>
 
               <div
                 class="row mt-5 down_imgs justify-content-evenly"
                 style="overflow: wrap"
               >
-                <div class="col-sm-6 p-2">
+                <div class="col p-2">
                   <img
                     src="img/Abnormality alerts.png"
                     alt=""
                     class="ab_alert"
                   />
                 </div>
-                <div class="col-sm-6 p-2">
+                <div class="col p-2">
                   <img
                     src="img/Break down history.png"
                     alt=""
@@ -394,16 +403,7 @@
               </div>
             </div>
           </div>
-          <nav
-            class="col horizontal-nav nav navbar flex-reverse-column align-items-center justify-content-evenly"
-          >
-            <!-- dashboard -->
-            <div class="btn text-white dash_div">Dashboard</div>
-
-            <div class="btn othr_divs">Cargo Gear</div>
-          </nav>
         </div>
-        <!-- <h3 class="h3 glsrtxt">Global Ship Report</h3> -->
       </section>
     </div>
   </body>
