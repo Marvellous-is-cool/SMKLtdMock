@@ -1,10 +1,11 @@
 body {
   background: #f4f8ff !important;
+  overflow: hidden;
 }
 
 .horizontal-nav {
-  min-width: 192px;
-  max-width: 1192px;
+  min-width: 192px !important;
+  max-width: 1192px !important;
   min-height: 58px;
   max-height: 78px;
   background: #0f141f;
@@ -52,6 +53,22 @@ body {
   font-size: 8px !important;
   font-weight: normal !important;
   color: white !important;
+}
+
+/* dashboard */
+.ship-cards {
+  border-radius: 12px;
+  background: url("../img/Mask.png") !important;
+  background-position: right bottom !important;
+  background-size: 10px 10px !important;
+  background-repeat: no-repeat !important;
+}
+
+.card-ship {
+  min-width: auto !important;
+  min-height: auto !important;
+  max-width: 45px !important;
+  max-height: 45px !important;
 }
 
 .top_nav {
@@ -140,6 +157,12 @@ body {
 
 .side_bar4 {
   margin: auto 1.5em !important;
+}
+
+.glshtxt {
+  color: #0f141f;
+  font-family: "Inter";
+  font-size: 24px !important;
 }
 
 /* inter-regular - latin */

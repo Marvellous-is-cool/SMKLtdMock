@@ -11,6 +11,8 @@ const clones = (cloneFrom, cloneTo, hasNoChildren, access_name) => {
     cloneTemp.children[1].innerHTML = access_name;
   } else if (hasNoChildren === true) {
     cloneTemp.innerHTML = access_name;
+  } else if (hasNoChildren === "c") {
+    // You're on your own pops
   }
 };
 
@@ -36,6 +38,45 @@ const top_hr = () => {
   }
 };
 
+// dashboard ships
+// top hr nav clones
+// const dashboard_clones = () => {
+//   let card_div = document.querySelector(".reports");
+//   let carditself = document.querySelector(".ship-cards");
+//   const cloneCards = (access_name, access_img, access_num) => {
+//     const cloneCardTemp = carditself.cloneNode(true);
+//     card_div.appendChild(cloneCardTemp);
+
+//     // change titles
+//     cloneCardTemp.children[1].children[1].innerHTML = access_name;
+
+//     // change images
+//     cloneCardTemp.children[0].children[1].children[0].src = `..img//${access_img}.png`;
+
+//     // change numbers
+//     cloneCardTemp.children[0].children[2].innerHTML = access_num;
+//   };
+
+//   const card_titles = [
+//     "Breakdown",
+//     "Daily Reports",
+//     "Cargo Operation",
+//     "Bunker",
+//     "Time Loss",
+//     "Port Turn Out",
+//     "Ballast Tank",
+//     "Demarrage & Despatch",
+//     "Voyage Summary",
+//   ];
+
+//   const card_srcs = [""];
+//   const card_num = [];
+
+//   for (let i = 0; i <= card_titles.length - 1; i++) {
+//     clones(carditself, card_div, true, card_titles[i]);
+//   }
+// };
+
 // const SmallScreenSizes = () => {
 //   indShipInd.classList.remove("d-none");
 //   indShipSec.classList.add("d-none");
@@ -47,7 +88,7 @@ const top_hr = () => {
 
 const inDcl = () => {
   // individual ship names clones
-  let indShipInd = document.querySelector(".ind-shipInd");
+  // let indShipInd = document.querySelector(".ind-shipInd");
   let indShipSec = document.querySelector(".individual_ships");
   let ISTemp = document.querySelector(".example");
 
@@ -66,20 +107,20 @@ const arr_config = [
 
 const toggleChevron = () => {
   arr_config[1].addEventListener("click", () => {
-    if (arr_config[1].src == "img/Vector 175.png") {
-      arr_config[1].src = "img/up_arrow.png";
+    if (arr_config[1].src == "img//Vector 175.png") {
+      arr_config[1].src = "img//up_arrow.png";
     } else {
-      arr_config[1].src = "img/Vector 175.png";
+      arr_config[1].src = "img//Vector 175.png";
     }
   });
 
   arr_config[0].addEventListener("click", () => {
     const Elemchild = document.querySelector(".child");
-    if (arr_config[0].src == "img/Vector 175.png") {
-      arr_config[0].src = "img/up_arrow.png";
+    if (arr_config[0].src == "img//Vector 175.png") {
+      arr_config[0].src = "img//up_arrow.png";
       Elemchild.classList.remove("d-none");
-    } else {
-      arr_config[0].src = "img/Vector 175.png";
+    } else if (arr_config[0].src == "img//up_arrow.png") {
+      arr_config[0].src = "img//Vector 175.png";
       Elemchild.classList.add("d-none");
     }
   });
