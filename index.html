@@ -141,7 +141,7 @@
             style="margin: 5.6em 16em; overflow-x: hidden; overflow-y: scroll"
           >
             <div class="dashboard" style="overflow: scroll">
-              <div class="mt-2 row">
+              <div class="glshpSta mt-2 row">
                 <h4 class="col h4 glshtxt">Global Ship Report</h4>
                 <div class="col img_div">
                   <img
@@ -150,15 +150,21 @@
                     class="DDIm animate__animated"
                   />
                   <i
-                    class="fa fa-minus d-none animate__animated"
+                    class="fa fa-minus d-none animate__animated close_DDIm"
                     aria-hidden="true"
                     style="color: #2c64e4"
                   ></i>
                 </div>
               </div>
               <div
-                class="dropDown position-absolute bg-white w-50 mr-5 p-2 d-none"
+                class="dropDown position-fixed bg-white animate__animated w-50 mr-5 p-2 d-none"
               >
+                <span
+                  class="float-end animate__animated d-none close_DDImM"
+                  aria-hidden="true"
+                  style="color: #2c64e4; opacity: 0.8"
+                  >- close</span
+                >
                 <div class="dropDown-item mb-2">
                   <img src="img/card-img-1.png" alt="" class="place-img" />
                   <span class="DD-text">Cargo Gear</span>

@@ -43,6 +43,53 @@
   /* CSS */
 }
 
+.horizontal-nav,
+.top_nav {
+  display: none;
+  z-index: 2 !important;
+  overflow-y: scroll !important;
+}
+
+.homeInit {
+  margin: 5em auto !important;
+  z-index: 1 !important;
+}
+
+.dashboard {
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+}
+
+.dashb {
+  overflow: hidden !important;
+}
+
+.dasha {
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+}
+
+.dropDown {
+  margin-top: 0em !important;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body2 {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.s_nDIV {
+  background-color: #0f141f !important;
+  font-family: "Inter" !important;
+  color: white !important;
+  font-weight: lighter !important;
+  z-index: 2 !important;
+}
 /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
