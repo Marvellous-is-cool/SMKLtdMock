@@ -53,6 +53,8 @@
   .horizontal-nav,
   .top_nav {
     display: none;
+    z-index: 2 !important;
+    overflow-y: scroll !important;
   }
 
   .homeInit {
@@ -62,6 +64,11 @@
   }
 
   body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  body2 {
     overflow-x: hidden;
     overflow-y: scroll;
   }

@@ -69,7 +69,7 @@ body {
   background: rgba(38, 104, 255, 0.2) !important;
   color: white !important;
   border: 1px solid rgba(38, 104, 255, 0.2) !important;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
 .ab_alert {
@@ -93,6 +93,20 @@ body {
   max-height: 45px !important;
 }
 
+.place-img {
+  min-width: auto !important;
+  min-height: auto !important;
+  max-width: 25px !important;
+  max-height: 25px !important;
+}
+
+.dropDown {
+  z-index: 2;
+  margin: -2em 5em !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px !important;
+}
+
 .top_nav {
   background-color: #0f141f;
   font-family: "Inter";
@@ -101,7 +115,6 @@ body {
   min-width: 248px !important;
   /* min-height: 885px; */
   max-width: 248px !important;
-  height: 100%;
 }
 
 .site_name {

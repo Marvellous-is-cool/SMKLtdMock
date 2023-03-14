@@ -14,6 +14,28 @@ const clones = (cloneFrom, cloneTo, hasNoChildren, access_name) => {
   }
 };
 
+const top_nv_list = () => {
+  let top_nav = document.querySelector(".dropDown");
+  let others = document.querySelector(".dropDown-item");
+
+  const top_navs_names = [
+    "Cargo Gear",
+    "Daily Reports",
+    "Cargo Operation",
+    "Bunker",
+    "Time Loss",
+    "Port Turn Out",
+    "Ballast Tank",
+    "Demarrage & Despatch",
+    "Voyage Summary",
+    "Grabs",
+  ];
+
+  for (let i = 0; i <= top_navs_names.length - 1; i++) {
+    clones(others, top_nav, "", top_navs_names[i]);
+  }
+};
+
 // top hr nav clones
 const top_hr = () => {
   let hr_nav = document.querySelector(".horizontal-nav");
@@ -124,6 +146,7 @@ const toggleChevron = () => {
   });
 };
 
+top_nv_list();
 top_hr();
 inDcl();
 toggleChevron();

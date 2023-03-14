@@ -5,6 +5,7 @@ let elem = [
   document.querySelector(".first_row"),
   document.querySelector(".dashboard"),
   document.querySelector(".homeInit"),
+  document.querySelector(".close-indc"),
 ];
 
 const MediaExec = (pixel, pixel2) => {
@@ -15,28 +16,63 @@ const MediaExec = (pixel, pixel2) => {
     site_nameDIV.classList.add("s_nDIV");
     site_nameDIV.classList.add("p-4");
     site_nameDIV.classList.add("position-fixed");
-    site_nameDIV.classList.add("align-items-start");
+    site_nameDIV.classList.add("animate__animated");
+
+    const site_nameDivRow = document.createElement("div");
+    site_nameDivRow.classList.add("row");
 
     const site_nameH = document.createElement("h5");
     site_nameH.innerHTML = "SMK LTD.";
     site_nameH.classList.add("h5");
+    site_nameH.classList.add("col-sm-3");
 
-    //  <div class="col img_div">
-    // <img src="img/Vector.png" alt="" class="" />
-    // </div>
+    const site_left_nav = document.createElement("div");
+    site_left_nav.classList.add("pr-3");
+    site_left_nav.classList.add("col-sm-3");
 
     const site_left_nav_img = document.createElement("img");
-    site_left_nav_img.classList.add("mr-3");
-    site_left_nav_img.src = "..img\\Vector.png";
+    site_left_nav_img.src = "..\\img\\Vector.png";
 
     if (wdt.matches) {
       // If media query matches
-      site_nameDIV.appendChild(site_nameH);
+      site_nameDIV.appendChild(site_nameDivRow);
+      site_nameDivRow.appendChild(site_nameH);
+
+      site_left_nav.appendChild(site_left_nav_img);
+      site_nameDivRow.appendChild(site_left_nav);
+
       elem[3].insertBefore(site_nameDIV, elem[5]);
 
       elem[5].classList.remove("position-absolute");
       elem[5].classList.add("col-sm-3");
       elem[5].classList.add("p-5");
+
+      // show left navigation
+      site_left_nav.addEventListener("click", () => {
+        site_nameDIV.classList.add("animate__fadeOutUp");
+        site_nameDIV.classList.remove("animate__fadeInDown");
+        elem[6].classList.toggle("d-none");
+        elem[1].style.display = "block";
+        elem[1].classList.add("animate__fadeInLeft");
+        elem[1].classList.remove("animate__fadeOutLeft");
+        elem[5].classList.remove("p-5");
+        elem[5].classList.add("position-absolute");
+        elem[5].style.marginLeft = "21em";
+        elem[2].style.overflow = "hidden";
+      });
+
+      elem[6].addEventListener("click", () => {
+        site_nameDIV.classList.add("animate__fadeInDown");
+        site_nameDIV.classList.remove("animate__fadeOutUp");
+        elem[6].classList.toggle("d-none");
+        elem[1].style.display = "none";
+        elem[1].classList.remove("animate__fadeInLeft");
+        elem[1].classList.add("animate__fadeOutLeft");
+        elem[5].classList.add("p-5");
+        elem[5].classList.remove("position-absolute");
+        elem[5].style.marginLeft = "auto";
+        elem[2].style.overflowY = "scroll";
+      });
     } else {
       site_nameDIV.remove();
     }
